@@ -22,7 +22,7 @@ Config.smartHomeProviderGoogleClientId = 'ZxjqWpsYj3';
 // Client secret that Google will use
 Config.smartHomeProvideGoogleClientSecret = 'hIMH3uWlMVrqa7FAbKLBoNUMCyLCtv';
 // Client API Key generated on the console
-Config.smartHomeProviderApiKey = '<API_KEY>';
+Config.smartHomeProviderApiKey = 'AIzaSyCaQQoH0-MoAVCs7tYaEu_hK6SPm3aDG10';
 // Client service key to use for reporting state
 Config.jwt = require('./jwt-key.json');
 // Running server locally using ngrok
@@ -31,7 +31,7 @@ Config.isLocal = false;
 Config.enableReset = true;
 
 function init() {
-  process.argv.forEach(function(value, i, arr) {
+  process.argv.forEach(function (value, i, arr) {
     if (value.includes('smart-home=')) {
       Config.smartHomeProviderCloudEndpoint = value.split('=')[1];
     } else if (value.includes('isLocal')) {
